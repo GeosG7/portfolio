@@ -1,0 +1,41 @@
+.footer {
+  background-color: var(--card-bg);
+  padding: 25px 20px;
+  text-align: center;
+  color: var(--text-color);
+  font-size: 0.9rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.contenedor-footer {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.redes-footer {
+  display: flex;
+  gap: 20px;
+}
+
+.redes-footer a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.redes-footer a:hover {
+  color: var(--secondary-color);
+}
+
+/* Responsive */
+@media (min-width: 600px) {
+  .contenedor-footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

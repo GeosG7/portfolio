@@ -1,0 +1,79 @@
+.header {
+  position: sticky;
+  top: 0;
+  background-color: var(--card-bg);
+  border-bottom: 1px solid var(--border-color);
+  z-index: 999;
+  padding: 15px 20px;
+}
+
+.contenedor {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.logo {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: var(--primary-color);
+}
+
+.nav {
+  display: flex;
+  gap: 25px;
+}
+
+.nav a {
+  font-weight: 500;
+  color: var(--text-color);
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: var(--primary-color);
+}
+
+.acciones {
+  display: flex;
+  gap: 15px;
+}
+
+.modo-btn,
+.menu-btn {
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+  color: var(--text-color);
+}
+
+.menu-btn {
+  display: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background-color: var(--card-bg);
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    display: none;
+  }
+
+  .nav.activo {
+    display: flex;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+}

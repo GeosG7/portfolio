@@ -1,0 +1,65 @@
+.sobre-mi {
+  padding: 80px 20px;
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  opacity: 1;
+}
+
+.sobre-mi.oculto {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.sobre-mi.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.contenedor-sobre-mi {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+.sobre-mi h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.sobre-mi p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.habilidades {
+  margin-top: 30px;
+  text-align: left;
+}
+
+.habilidades h3 {
+  margin-bottom: 10px;
+  color: var(--primary-color);
+}
+
+.habilidades ul {
+  list-style-type: '✅ ';
+  padding-left: 20px;
+}
+
+.habilidades li {
+  margin-bottom: 8px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .habilidades {
+    text-align: center;
+  }
+
+  .sobre-mi p {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,86 @@
+.contacto {
+  padding: 80px 20px;
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.contacto.oculto {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.contacto.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.contenedor-contacto {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+.contacto h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.contacto p {
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.formulario input,
+.formulario textarea {
+  padding: 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-size: 1rem;
+}
+
+.formulario textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.formulario button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.formulario button:hover {
+  background-color: var(--secondary-color);
+}
+
+.redes {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.redes a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.redes a:hover {
+  color: var(--secondary-color);
+}
