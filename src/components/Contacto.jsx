@@ -1,4 +1,4 @@
-import './Contacto.css';
+import './contacto.css';
 import { useRef, useEffect } from 'react';
 
 function Contacto() {

@@ -1,4 +1,4 @@
-import './SobreMi.css';
+import './sobreMi.css';
 import { useEffect, useRef } from 'react';
 
 function SobreMi() {
